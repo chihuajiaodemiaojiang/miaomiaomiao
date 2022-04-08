@@ -1,3 +1,0 @@
-switch之后必须是case或者是default
-switch是状态分支语句,switch中的状态值和case后的值作比较,成立才执行
-if是条件分支,值判断if中的条件，条件中可以是范围.
