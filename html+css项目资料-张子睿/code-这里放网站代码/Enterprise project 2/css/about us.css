@@ -1,0 +1,40 @@
+.main {
+    margin-top: 33px;
+    height: 800px;
+}
+
+.main-b li {
+    width: 262px;
+    height: 48px;
+    background-color: #f2f2f2;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.main-b {
+    float: left;
+    width: 262px;
+    margin-right: 27px;
+}
+
+.main-b img {
+    width: 261px;
+    height: 261px;
+}
+
+.main-b li:last-child {
+    margin-top: 20px;
+}
+
+.main-c {
+    width: 900px;
+    height: 580px;
+    float: left;
+}
+
+.main-c p {
+    line-height: 32px;
+    margin-bottom: 48px;
+}

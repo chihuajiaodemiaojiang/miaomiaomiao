@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border-bottom: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .ass::after {
+            height: 0px;
+            display: inline-block;
+            border: 10px solid rgb(245, 128, 74);
+            border-top-color: transparent;
+            border-right: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            top: 0px;
+            content: "";
+            right: -10px;
+        }
+
+        div {
+            height: 20px;
+            width: 40px;
+
+            position: relative;
+            background-color: rgb(74, 131, 245);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ass">123 </div>
+</body>
+
+</html>

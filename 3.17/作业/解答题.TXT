@@ -1,0 +1,8 @@
+1.	简答题：请说说你对盒子模型的理解（考点：盒子模型的概念、两种盒子模式）
+  盒子分标准模式和怪异模式，标准模式实W3C的模式，是内边距加外边距加边框加内容分开算的盒子，怪异盒子是内边距加外边距加边框加内容都包含在高宽里的盒子。模型实在网页设计中经常用到的CSS技术所使用的一种思维模型。
+2.	简答题：写出今天所学的所有CSS属性（考点：背景、盒子模型属性）
+宽度 width  高度height 最小高度 min-height 最大高度max-height 
+内边距 padding 上边内边距 padding-top 右边内边距 padding-right 左边内边距 padding-left 下边内边距 padding-bottom
+外边距 margin 上边外边距 margin-top 右边外边距 margin-right 左边内边距 padding-left 下边内边距 padding-bottom
+边框 border-width  边框宽度 border-width 边框线型 border-style 边框颜色 border-coler 上边框 border-top 下边框border-boottom 左边看 border-left 右边框 border-right 
+

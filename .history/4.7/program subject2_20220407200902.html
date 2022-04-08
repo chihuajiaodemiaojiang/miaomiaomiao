@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Entire(a) {
+            let sum = 0;
+            for (let i = 1; i < a; i++) {
+                if (i % 3 == 0) {
+                    sum++
+                }
+            }
+            return sum;
+        }
+        let a = prompt("Enter a number");
+        document.write(a +"里能被三整除的个数是 " + Entire(a));
+    </script>
+</body>
+
+</html>

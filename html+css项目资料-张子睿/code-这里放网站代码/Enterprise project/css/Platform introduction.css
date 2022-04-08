@@ -1,0 +1,180 @@
+
+.main-top {
+
+    height: 416px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.main-top span:first-child {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #7a7a7a;
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left:-100px;
+    background-color: #ffffff;
+}
+
+.main-top span:nth-child(2) {
+    width: 850px;
+    height: 20px;
+    border-bottom: 2px solid #cbcbcb;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left:-425px;
+    z-index:-1;
+    top: 8px;
+}
+
+.mae {
+    width: 128px;
+    height: 19px;
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #d43b33;
+    display: block;
+    margin-left: 352px;
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    top: 25px;
+    font-weight: bold;
+
+}
+
+.maf {
+    font-size: 14px;
+    display: block;
+    height: 125px;
+    margin-top: 38px;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    top: 65px;
+}
+
+.maf p{
+    line-height: 26px;
+    font-size: 12px;
+}
+.maf p:nth-child(3){
+    font-weight: bolder;
+    font-size: 14px;
+}
+.main-mid
+{
+    background-image: url(../images/enterprise_culture.png);
+    height: 464px;
+    padding-top: 68px;
+}
+.main-mid-left span:nth-child(2){
+    display: block;
+    font-size: 22px;
+    display: inline-block;
+}
+.main-mid-left span:nth-child(3){
+    display: block;
+    font-size: 22px;
+    color: #d43b33;
+    margin-bottom: 20px;
+}
+.main-mid-left li:nth-child(2n+1){
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+.main-mid-left li:nth-child(2n){
+    font-size: 12px;
+    border-bottom: black dashed 1px;
+    width: 376px;
+    padding-bottom: 8px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+
+}
+.main-mid-right{
+    width: 538px;
+    height: 310px;
+    float: right;
+    
+}
+.main-mid ul{
+    float: left;
+}
+.bottm{
+    height: 722px;
+    font-size: 22px;
+    padding-top: 50px;
+}
+.bottm p:first-child{
+    display: block;
+    text-align: center;
+}
+.bottm p:nth-child(2){
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.bottm p:nth-child(3){
+    font-size:12px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+.bottm-c{
+    height: 400px;
+    background-color: #4b4b4b;
+}
+.bottm-c img{
+    float: left;
+
+}
+.c1 {
+    margin-top: 50px;
+    font-size: 14px;
+    color: white;
+    display: block;
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+.c2{
+    font-size: 12px;
+    color: white;
+    margin-left: 18px;
+    display: block;
+    line-height: 18px;
+    width: 205px;
+}
+.c0{
+    width: 250px;
+    float: left;
+    height: 174px;
+}
+.c4{
+    background-color:#d43b33;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    height: 52px;
+    float: left;
+    width: 1000px;
+    line-height: 52px;
+    
+}
+
+
+
+

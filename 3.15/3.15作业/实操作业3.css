@@ -1,0 +1,27 @@
+a:link,
+a:visited {
+    text-decoration: none;
+    color: orange;
+   font-size: 16px;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.kl{ text-overflow: ellipsis;
+    /* 如何处理元素内的空白 */
+    white-space: nowrap;
+    /* overflow 属性规定当内容溢出元素框时发生的事情 */
+    overflow: hidden;
+    line-height: 60px;
+
+
+
+.xd{
+    font-size: 6px;
+    color: white;
+}
+body{
+    background-color: black;
+}
+

@@ -1,0 +1,107 @@
+.main-top span:first-child {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+.mae {
+    height: 30px;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-top {
+
+    box-sizing: border-box;
+
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.mac {
+    width: 332px;
+    height: 33px;
+    line-height: 33px;
+    float: left;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.mao {
+    background-image: url(../images/tabbg.png);
+    position: relative;
+    margin-bottom: 55px;
+    width: 334px;
+    height: 41px;
+
+}
+
+.main-left {
+    width: 720px;
+    height: 180px;
+    border: 1px solid #d6d6d6;
+    float: left;
+    margin-right: 26px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.main-left img {
+    width: 200px;
+    height: 126px;
+    float: left;
+    margin-right: 40px;
+}
+
+.main-left a {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.main-left span {
+    line-height: 20px;
+}
+
+.main-right {
+    width: 251px;
+    height: 96px;
+    border: 1px solid #d6d6d6;
+    padding: 20px;
+    float: right;
+    margin-bottom: 108px;
+
+}
+
+.main li {
+    display: inline-block;
+
+}
+
+.main {
+    height: 492px;
+}
+
+.main ul a {
+    display: block;
+    background-color: red;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+
+}
+
+.main ul .hc {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+
+}

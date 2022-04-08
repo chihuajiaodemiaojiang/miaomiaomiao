@@ -1,0 +1,119 @@
+
+.top{
+    background-color: black;
+    height: 20px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.top div:first-child{
+    background-color: #36b18f;
+    height: 20px;
+}
+.container{
+    width: 1000px;
+    margin: 0px auto;
+}
+.topp ul:first-child{
+    background-color:#2f0ce7;
+    height: 100px;
+    list-style: none;
+}
+.topp li{
+    float: left;
+}
+a{
+    color:white;
+    text-decoration: none;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+    width: 80px;
+    
+}
+.xiala{
+    display: none;
+    background-color: aqua; 
+    position: absolute;
+}
+.xiala a{
+    line-height: 30px;
+    color: bisque;
+}
+li:hover .xiala{
+    display: inline;
+
+}
+.xialaa{
+    background-color: aquamarine;
+    height: 0px;
+    transition: all 1s linear;
+    position: absolute;
+    overflow: hidden;
+
+}
+li:hover .xialaa{
+    height: 120px;
+
+}
+.xialaa a{
+    line-height: 30px;
+    color:blue;
+}
+.banner{
+    height: 280px;
+    background-color: #808080;
+    position: relative;
+    z-index: -2;
+}
+.banner div:first-child{
+     background-color: yellow;
+     height: 280px;
+     z-index: -1;
+}
+.main{
+     height: 300px; 
+}
+.main ul{
+      list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.gg{
+    width: 240px;
+    height: 277px;
+    background-color: #36b18f;
+    margin: 10px 10px 10px 0px;
+    float: left;
+    position: relative;
+}
+.gg span{
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgba(0,0 ,0 ,0.5);
+}
+.tiao{
+    display: block;
+    width: 16px;
+    height: 280px;
+    background-color: #808080;
+    position: absolute ;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -140px;
+}
+.footer{
+    height: 90px;
+    background-color: black;
+    margin-top: 10px;
+}

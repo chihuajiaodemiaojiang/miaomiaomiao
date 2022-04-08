@@ -1,0 +1,33 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    
+}
+.po{
+    height: 60px;
+    background-color: yellowgreen;
+    margin-bottom: 20px;
+}
+.uy::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.io{
+    height: 400px;
+    float: left;
+    margin-right: 1%;
+    width: 19%;
+    background-color: yellowgreen;
+}
+.ao{
+    height: 400px;
+    float: left;
+    width: 80%;
+    background-color: yellowgreen;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,273 @@
+body {
+    background-image: url(../images/新春片头.00_00_30_11.Still003-low_res-scale-2_00x-gigapixel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+.top {
+    height: 25px;
+    background-color: rgba(125, 187, 228, 0.6);
+    min-width: 1200px;
+}
+
+.log {
+    height: 75px;
+    background-color: rgba(125, 187, 228, 0.6);
+    position: fixed;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.banner {
+    background-color: rgba(125, 187, 228, 0.6);
+    height: 185px;
+    margin-bottom: 13px;
+    color: rgba(66, 143, 211, 0.9);
+    box-sizing: border-box;
+    padding: 66px 0px 90px 310px;
+}
+
+
+
+.right {
+    float: right;
+    width: 332px;
+    height: 1341px;
+    background-color: rgba(125, 187, 228, 0.6);
+}
+
+.left {
+    float: left;
+    width: 853px;
+    height: 198px;
+    margin-bottom: 15px;
+    background-color: rgba(125, 187, 228, 0.6);
+    box-sizing: border-box;
+    padding: 16px;
+    color: rgb(5, 59, 102);
+}
+
+.links {
+    height: 50px;
+}
+
+.footer {
+    background-color: rgba(97, 174, 226, 0.741);
+    font-size: 6px;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.linka {
+    float: right;
+}
+
+.top-right .left a:link,
+a:visited {
+    text-decoration: none;
+    color: rgba(233, 240, 245, 0.8);
+    font-size: 12px;
+    margin-left: 22px;
+}
+
+.fb {
+    color: rgba(233, 240, 245, 0.8);
+    font-size: 12px;
+    display: block;
+}
+
+.top-right {
+    float: right;
+}
+
+.log img {
+    height: 69px;
+    width: 70px;
+}
+
+.log a {
+    line-height: 75px;
+    font-size: 18px;
+    margin-left: 28px;
+}
+
+.im {
+    float: left;
+    margin-left: 7%;
+    margin-top: 8px;
+    margin-right: 99px;
+    height: 60px;
+    display: block;
+}
+
+.bt {
+    font-size: 14px;
+}
+
+.banner h1 {
+    font-size: 30px;
+}
+
+.banner p {
+    font-size: 14px;
+}
+
+.left img {
+    height: 166px;
+    width: 295px;
+    float: left;
+    margin-right: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: rgba(233, 240, 245, 0.8);
+}
+
+.c {
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    text-indent: 21px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.c1 {
+    background-position-y: 4px;
+}
+
+.c2 {
+    background-position-y: -13px;
+}
+
+.am {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.ac {
+    float: left;
+}
+
+.c3 {
+    background-position-y: -45px;
+}
+
+.c4 {
+    background-position-y: -30px;
+}
+
+.c5c {
+    display: block;
+    font-size: 14px;
+}
+
+.links {
+    margin-left: 36px;
+    color: rgba(66, 143, 211, 0.9);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.links a {
+    margin-left: 20px;
+}
+
+.right {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.right h3 {
+    border-bottom: 1px solid rgba(66, 143, 211, 0.9);
+    color: rgba(66, 143, 211, 0.9);
+}
+
+.p1 {
+    width: 147px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: rgba(66, 143, 211, 0.5);
+    box-sizing: border-box;
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px;
+    color: rgba(233, 240, 245, 0.8);
+}
+
+.p2 {
+    margin-bottom: 20px;
+}
+
+.p3 a {
+    padding-left: 2px;
+}
+
+.p3 {
+    border-bottom: 1px dashed rgba(66, 143, 211, 0.9);
+    color: rgba(66, 143, 211, 0.9);
+    box-sizing: border-box;
+    padding-top: 5px;
+    color: rgba(233, 240, 245, 0.8);
+    display: block;
+    padding: 15px 0px;
+    text-indent: 2px;
+}
+
+.p4 {
+    background-image: url(../images/erer.png);
+    height: 20px;
+    background-repeat: no-repeat;
+    border-bottom: 0px;
+    line-height: 20px;
+    height: 20px;
+    width: 57px;
+    margin-top: 1px;
+    display: inline-block
+}
+
+.p5 {
+    margin-top: 20px;
+}
+
+.pagenation {
+    list-style: none;
+    height: 40px;
+    text-align: center;
+}
+
+.pagenation li {
+    display: inline-block;
+    height: 26px;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-left: 1px;
+    color: rgba(14, 139, 223, 0.857);
+}
+
+.pagenation li a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    text-decoration: none;
+    background-color: rgba(125, 187, 228, 0.6);
+    box-sizing: border-box;
+}
+
+.pagenation li a:hover {
+    color: #fff;
+    background-color: rgba(233, 240, 245, 0.8);
+}
+
+.ei {
+    margin: 0px;
+}

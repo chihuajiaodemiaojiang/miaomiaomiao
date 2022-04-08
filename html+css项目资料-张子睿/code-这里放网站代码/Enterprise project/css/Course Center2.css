@@ -1,0 +1,70 @@
+.main div:first-child{
+    margin-top: 50px;
+    height: 503px;
+    position: relative;
+    margin-left: 174px;
+    width: 1004px;
+    margin: 0 auto;
+}
+.main h1:nth-child(2){
+    font-size: 24px;
+    color: red;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 60px;
+}
+.main a{
+    font-size: 12px;
+    color: black;
+}
+.main p:nth-child(3)
+{
+    text-align: center;
+    margin-bottom: 28px;
+}
+.dizhi{
+    font-size: 14px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #d16d57;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+.xian{
+    height: 2px;
+    background-color:  #d16d57;
+    display: block;
+   
+}
+.ji{
+    display: inline-block;
+    width: 80px;
+    height: 29px;
+    background-color: #d16d57;
+    margin: 30px 10px 30px 0px;
+    text-align: center;
+    line-height: 29px;
+    color: white;
+    border: 0px;
+    outline: none;
+}
+.wenzhang{
+    margin-top: 16px;
+    display: block;
+    margin-bottom: 56px;
+}
+.pian{
+    font-size: 10px;
+    color: #d16d57;
+    margin-right:30px ;
+}
+.pian a{
+    color: #d16d57;
+}
+.main{
+    margin-top:50px;
+}

@@ -1,0 +1,22 @@
+textarea{
+    resize:none;
+    height: 40px;
+    width: 640px;
+    line-height: 40px;
+    position: relative;
+    border: 1px solid #b8b8b8;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+button{
+    width: 104px;
+    height: 40px;
+    border: none;
+    background-color: #3388ff;
+    color: white;
+    position:absolute;
+    left: 543px;
+    border-radius: 0px 10px 10px 0px;
+    
+}

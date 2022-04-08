@@ -1,0 +1,66 @@
+.main-left p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 42px;
+}
+
+.main-left {
+    width: 800px;
+    height: 610px;
+    float: left;
+}
+
+p span {
+    color: red;
+}
+
+input {
+    width: 801px;
+    height: 41px;
+    outline: 0px;
+    border: 1px solid #a5a7aa;
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.input-check {
+    display: none;
+}
+
+.online{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.my-label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #a5a7aa;
+    margin-left: 8px;
+}
+.input-check:checked+.my-label {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+.input-check:checked+.my-label::after {
+    content: "\2714";
+}
+
+.textr{
+    width: 801px;
+	height: 73px;
+}
+.boot {
+    width: 100%;
+    height: 50px;
+    background-color: #21bcd8;
+    font-size: 14px;
+    color: white;
+}
+.main{
+    height: 839px;
+}

@@ -1,0 +1,6 @@
+table 整个表格 tr行 td单元格 thead表格头部 tbody表格主体 tfoot表格尾部 th表头单元格 caotion表格标题
+action服务器程序名 method数据提交的方式 get可以在地址栏看到数据 post 数据通过请求发送到服务器
+text普通文本框 password密码框 radio单选框 checkbox 复选框
+name 要提交给服务器的数据必须写neam value提交给服务器的值
+checked 单选框和复选框的默认选中项 placeholder占位符 maxlength最大长度 readonly 只读 disabled禁用
+submit 提交按钮 button普通按钮 reset 重设按钮

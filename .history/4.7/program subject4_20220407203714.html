@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function  maximumValue(a,b,c) {
+            let max = a;
+           
+            if( max<b ){
+                max=b;
+            }
+
+            if( max<c ){
+                max=c;
+            }
+
+            return max;
+        }
+        a = prompt("请输入数字");
+        typeof a == "number"
+        b = prompt("请输入数字");
+        typeof b == "number"
+        c = prompt("请输入数字");
+        typeof c == "number"
+        document.write("最大值是: " + maximumValue(a,b,c));
+      
+    </script>
+</body>
+
+</html>

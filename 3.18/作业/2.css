@@ -1,0 +1,55 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+  
+}
+.clr{
+    background-color: red;
+    float: left;
+    width: 11%; 
+    height: 60px;
+}
+.lor{
+    background-color: yellow;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.ac{
+    float: right;
+}
+.lk{
+    float: left;
+    width: 28%;
+    height: 400px;
+    margin-top: 20px;
+    line-height: 400px;
+}
+.sa{
+    height: 400px;
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+    line-height: 400px;
+    margin-bottom: 20px;
+}
+.rt{
+    background-color: red;
+    margin: 0px 11%;
+}
+.ut{
+    float: left;
+    width: 2%;
+    height: 400px;
+    background-color: red;
+    margin-top: 20px;
+}
+.clear::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.box{
+    
+    padding: 0px 11%;
+}

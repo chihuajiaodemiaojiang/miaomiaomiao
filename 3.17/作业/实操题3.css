@@ -1,0 +1,45 @@
+.po{
+    background-image: url(./bg_border.jpg);
+    height: 590px;
+    width: 760px;
+    padding: 20px
+    
+}
+.ko{
+    background-image: url(./bg_poem.jpg);
+    height: 590px;
+    width: 760px;
+}
+h4{
+    margin: 0px;
+    text-align: center;
+    color: red;
+    font-family: "宋体";
+    padding-top: 8px;
+    }
+.kn{
+    color: green;
+    font-size: 8px;
+    text-align: center;
+    padding: 8px;
+}
+.cj{
+    padding-left: 8px;
+    color: green;
+    font-weight: bold;
+    font-family: "宋体";
+}
+.ij{
+    padding: 8px;
+    color: red;
+    font-weight: bold;
+    font-family: "宋体";
+}
+.kl{
+    color: green;
+    font-size: 8px;
+    padding: 8px;
+    line-height: 30px;}
+a{
+    margin-left: 10px;
+}

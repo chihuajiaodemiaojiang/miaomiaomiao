@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <script>
+        //    请使用数组month保存30个元素，rest保存休息的天数，study保存自习的天数，得出这个月总共休息少天，自习多少天。
+        function program() {
+            let month = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+            let rest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+            let study = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+            let sum = 0;
+            let sum1 = 0;
+            rest.forEach(function (v, i) {
+                sum += v;
+            });
+            study.forEach(function (v, i) {
+                sum1 += v;
+            });
+            console.log("这个月总共休息少天：" + sum);
+            console.log("这个月总共自习多少天：" + sum1);
+        }
+            
+        </script>
+    </body>
+
+</html>;

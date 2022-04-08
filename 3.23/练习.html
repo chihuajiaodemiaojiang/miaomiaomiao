@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ac{
+            width: 300px;
+            border: 1px solid rgb(187, 80, 80);
+            border-collapse: collapse
+        }
+        .ac td,.ac th{
+            border: 1px solid rgb(187, 80, 80);
+        }
+        .to{
+            width: 300px;
+            border: 1px solid rgba(80, 98, 187, 0.789);
+            border-collapse: collapse
+        }
+        .to td,.to th{
+            border-bottom: 1px dashed rgba(80, 98, 187, 0.789);
+            
+        }
+        input{
+            margin: 20px;
+            
+        }
+        textarea{
+            width: 1200px;
+            height: 500px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <table class="ac">
+        <caption>
+            表格啊
+        </caption>
+        <thead>
+            <tr>
+            <th>啊</th>
+            <th>啊啊</th>
+            <th>啊啊啊</th>
+            <th>啊啊啊啊</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>qqq</td>
+                <td rowspan="3">qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">aaa</td>
+                
+            </tr>
+        </tfoot>
+            
+    </table>
+   
+    <table class="to">
+        <caption>
+            表格啊
+        </caption>
+        <thead>
+            <tr>
+            <th>啊</th>
+            <th>啊啊</th>
+            <th>啊啊啊</th>
+            <th>啊啊啊啊</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>qqq</td>
+                <td rowspan="3">qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+            <tr>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+                <td>qqq</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">aaa</td>
+                
+            </tr>
+        </tfoot>
+            
+    </table>
+    <form action="index.html" method="post">
+        <p>
+            用户名<input type="text" name="username" maxlength="10">
+        </p>
+        <p>
+            密码 <input type="text" name="owd" placeholder="狗斯林勿入" readonly>
+        </p>
+        <p>
+            <input type="radio" name="1" value="saasdas">aaa
+            <input type="radio" name="2" value="asdasd" checked>aaa
+            <input type="radio" name="3" value="sadasd"> aaa 
+            <input type="text"  name="3" value="23">啊啊啊
+        </p>
+        <p>
+            <input type="checkbox" name="a" value="sasa" checked readonly>洗澡狗吹JB
+            <input type="checkbox" name="b" value="sasa" disabled>神是伪造的
+            <input type="checkbox" name="c" value   ="sasa">aaas
+            <input type="checkbox" name="d" value="122"> asdasd
+        </p>
+            <select name="" id="">
+                <option value="-1">请选择你的成分</option>
+                <option value="y">是狗斯林</option>
+                <option value="n">不是</option>
+                <option value="ye" selected>是狗黑</option>
+            </select>
+        <textarea name="sadasd" id="" cols="30" rows="10" placeholder="狗斯林滚啊"></textarea>
+        <p>
+            <button>登入</button>
+        </p>
+    </form>
+</body>
+</html>

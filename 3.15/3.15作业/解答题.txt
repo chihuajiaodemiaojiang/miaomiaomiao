@@ -1,0 +1,18 @@
+1.	简答题：写出今天所学的所有CSS属性（考点：文本属性、背景属性）
+text-align水平对齐 left左对齐 right：右对齐 center：居中对齐 justify两端对齐
+vertical-align垂直对齐
+text-indent 文本缩进
+text-overflow文本溢出标识
+text-shadow文本阴影
+background-color背景颜色
+background-image 背景图片
+background-背景平铺 repeat：水平和垂直方向重复显示，默认值。repeat-x：水平方向重复（平铺）
+repeat-y垂直方向重复，no-repeat：不重复
+background-position 背景图位置 固定值 background-position：30px 40px 百分比background-position
+10% 20% 方位词 left===0% center right  top===0% center bottom
+background：颜色 位置 路径 位置  背景复合属性
+2.	简答题：CSS样式不生效该如何解决，请尽可能多的写出各种情况（考点：错误解决思路）
+运行Chrome，打开F12，检查外部样式表，检查CSS文件路径，检查选择器上的单词与html是否一致。
+检查html标签上的class属性或者ID属性单词有没有写错。先看自己的选择器是否输入正确
+有选择器检查属性名是否输入正确，检查属性值是否书写正确，检查分号和冒号是否输入正确
+

@@ -1,0 +1,16 @@
+let a=65;
+console.log( a, typeof a );
+let b= "0";
+console.log( b, typeof b );
+let c= '小貂蝉';
+console.log( c, typeof c );
+let d= '';
+console.log( d, typeof d );
+let e=null;
+console.log( e, typeof e ); 
+let f=undefined ;
+console.log( f, typeof f ); 
+let g=NaN;
+console.log( g, typeof g ); 
+let h=true;
+console.log( h, typeof h ); 

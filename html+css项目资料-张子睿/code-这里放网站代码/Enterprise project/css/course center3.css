@@ -1,0 +1,32 @@
+.main-top span:first-child {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.mae {
+    height: 30px;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.main-top {
+
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+.main h1:nth-child(3){
+    font-size: 24px;
+    color: red;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 50px; 
+}
+.main-top img{
+    margin-bottom: 80px;
+}

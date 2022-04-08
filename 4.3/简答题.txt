@@ -1,0 +1,26 @@
+JavaScript简称为JS，是一门强大的编程语言，运行在浏览器上
+用于操作HTML和CSS，实现网页交互
+内部脚本
+    <script>
+        //alert('这里是内部脚本的代码');
+    </script>
+
+外部脚本
+    <script src="03.js"></script>
+
+行内脚本
+    <h1 onclick="alert('明天你想干啥呢？');">今天星期天，我们在上课，好海哦~~~</h1>
+
+协议脚本
+    <a href="javascript:alert('找不到百度')">百度一下</a>
+var 变量名=值,ES5定义变量，可以重定义，可以修改
+let 变量名=值,ES6定义变量，不能重定义，可以修改
+const 变量名=值,ES6定义常量，不能重定义，不能修改
+250px 不合法
+a20 合法
+$250 合法
+_250合法 
+mini-cooper 不合法
+$page_home 间隔命名法
+zhangSanFeng 驼峰命名法
+var 不合法 

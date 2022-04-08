@@ -1,0 +1,241 @@
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+
+body {
+	font: 12px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color: #666;
+}
+em {
+    font-style: normal;
+}
+.index {
+    background-color: #f6f6f6;
+}
+.inner{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+/*--------mod------------*/
+.mod_ver {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+}
+.mod_price {
+    font-size: 14px;
+    color: #f10214;
+}
+.mod_price i {
+    margin-right: 3px;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 12px;
+}
+/*--------box---------*/
+.box_hd {
+    position: relative;
+    padding: 0 20px 0 30px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    overflow: hidden;
+}
+.box_hd_col1 {
+    float: left;
+}
+.box_hd_dec {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 28px;
+    height: 28px;
+}
+.box_hd_icon, .box_promo, .box_tit {
+    float: left;
+}
+.box_tit {
+    /*font-family: fzzhengheis-el-gbregular;*/
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 9px;
+}
+.box_subtit {
+    position: relative;
+    float: right;
+    margin-top: 19px;
+    padding-right: 20px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+.box_subtit:hover {
+    color: #fff;
+}
+.box_subtit_arrow, .coupon_entry_btn_ico {
+    background: url(../images/sprite_index@1x.png) no-repeat -154px -40px;
+    background-size: 218px 188px;
+    width: 15px;
+    height: 16px;
+}
+.box_subtit_arrow {
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.box_hd_col2 {
+    float: right;
+}
+.box_bd {
+    background-color: #fff;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+#prehead{
+	height: 80px;
+	background-color: #A9291C;
+	position: relative;
+}
+
+#shortcut{
+	height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;
+	color: #999;
+	position: relative;
+	z-index: 2;
+}
+
+#header{
+	width: 100%;
+	height: 140px;
+	overflow: visible;
+	position: relative;
+	position: relative;
+	z-index: 1;
+}
+
+#cover{
+	height: 480px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.cover_col1,.cover_col2{
+	float: left;
+	height: 100%;
+}
+.cover_col1{
+	width: 190px;
+	margin-right: 10px;
+	position: relative;
+	z-index: 2;
+}
+.cover_col2{
+	width: 790px;
+	position: relative;
+	z-index: 1;
+}
+.cover_col3 {
+    float: right;
+    margin-left: 10px;
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+   	position: relative;
+	z-index: 1;
+}
+#seckill{
+	height: 305px;
+}
+#enjoy {
+    height: 598px;
+}
+#fbt {
+    height: 444px;
+}
+#fbt, #seckill {
+    margin-bottom: 30px;
+}
+.coupon {
+    height: 215px;
+}
+.coupon, .entry_c3 {
+    margin-bottom: 30px;
+}
+.entry_c5, .entry_c6, .entry_c7 {
+    margin-bottom: 30px;
+    height: 195px;
+}
+#more {
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+/*rec*/
+.chn, .rec {
+    margin-bottom: 30px;
+}
+.rec {
+    height: 100px;
+    background-color: #e0e0e0;
+}
+.rec_list {
+    overflow: hidden;
+    height: 100px;
+}
+.rec_item {
+    overflow: hidden;
+    float: left;
+    width: 396px;
+    height: 100%;
+}
+.o2_mini .rec_item {
+    width: 330px;
+}
+.rec_img {
+    display: block;
+    margin: auto;
+}
+.csstransitions .rec_img {
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.csstransitions .rec_lk:hover .rec_img {
+    opacity: .8;
+}

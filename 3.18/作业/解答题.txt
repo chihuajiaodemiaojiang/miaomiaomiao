@@ -1,0 +1,8 @@
+超出处理 overflow visible默认 auto自动 hidden隐藏 scrooll滚动
+显示与隐藏 display block 转化为块状元素，none不显示标签，inline以行内元素的方式显示标签，inline-block转行內级块元素
+浮动flot left左浮动 right 右浮动
+清除浮动的4中方式 空DIV标签清除浮动，clear：both  ：after{ content: "";
+    display: block;
+    clear: both;}
+    在父标签上，设置overflow：hidden
+    4.固定高度，不会造成影响

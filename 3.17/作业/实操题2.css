@@ -1,0 +1,41 @@
+.box{
+    width: 199px;
+    height: 400px;
+    border:solid 1px black
+    }
+h4{
+    font-weight: normal;
+    text-align: center;
+    background-color: orange;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+}
+ul{
+    padding-left: 10px;
+    list-style: none;
+    margin-top: 8px;
+}
+.lo{
+    font-size:7px ;
+    margin: 8px 16px 10px 8px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px ;
+
+}
+.po{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 8px;
+}
+.ro{
+    font-size:7px ;
+    margin: 8px 16px 8px 8px;
+    padding-bottom: 8px;
+}
+a:link,a:visited{
+color: black;
+text-decoration: none;
+margin-left: 10px;
+}
+

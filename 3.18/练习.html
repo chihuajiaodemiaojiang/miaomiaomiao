@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            width: 1000px;
+        }
+        header{
+            height: 150px;
+            text-align: center;
+            background-color: aqua;
+            margin: 8px;
+            border: solid 5px blue;
+            line-height: 150px;
+
+            
+        }
+        nav{
+            height: 80px;
+            text-align: center;
+            background-color: aqua;
+            margin: 0px 8px;
+            border: solid 5px blue;
+            line-height: 80px;
+        }
+        .a{
+           
+           
+        }
+        .ac{
+            float: left;
+            width: 208px; 
+            height: 250px;   
+            background-color: aqua;
+            margin: 8px;
+            border: solid 5px blue;
+            text-align: center;
+            line-height: 232px;
+        }
+        .ar{
+            float: left;
+            width: 522px; 
+            height: 250px;   
+            background-color: aqua;
+            margin: 8px 0px;
+            border: solid 5px blue;
+            text-align: center;
+            list-style: none;
+            line-height: 232px;
+        }
+        .aca{
+            height: 150px;
+            text-align: center;
+            background-color: aqua;
+            margin: 0px 8px;
+            border: solid 5px blue;
+            line-height: 150px;
+        }
+        .a::after{
+              /* 内容：必须要书写 */
+        content: '';
+        /* 转为块级元素 */
+        display: block;
+        /* 清除浮动 */
+        clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    头部
+    </header>
+    <nav>
+    菜单
+    </nav>
+    <div class="a">
+         <div class="ac">
+             左边栏
+         </div><div class="ar">
+            左边栏
+        </div>
+        <div class="ac">
+            左边栏
+        </div>
+    </div>
+         <div class="aca"> 
+             尾部
+         </div>
+     
+
+    </div>
+</body>
+</html>

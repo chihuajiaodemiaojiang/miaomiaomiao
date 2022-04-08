@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function judgmentDataType(a) {
+            if (typeof a == "string") {
+                return "String";
+            } else if (typeof a == "number") {
+                return "Number";
+            } else if (typeof a == "boolean") {
+                return "Boolean";
+            } else if (typeof a == "undefined") {
+                return "Undefined";
+            } else if (typeof a == "object") {
+                return "Object";
+            } else if (typeof a == "function") {
+                return "Function";
+            }
+        }
+        let a = prompt("Enter a number");
+        document.write("Data type of " + a + " is " + judgmentDataType(a));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+/*
+KISSY CSS Reset
+理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+	  2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+	  3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色：1. 适应中文；2. 基于最新主流浏览器。*/
+/** 清除内外边距 **/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote, 
+/* structural elements 结构元素*/
+dl,dt,dd,ul,ol,li, 
+/* list elements 列表元素*/
+pre, 
+/* text formatting elements 文本格式元素*/
+form,fieldset,legend,button,input,textarea, 
+/* form elements 表单元素*/
+th, td 
+/* table elements 表格元素*/
+{
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body,button,input,select,textarea 
+/* for ie*/
+	 {
+	font-family:微软雅黑;
+	font-size:12px;
+	background-color: white;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+}
+address,cite,dfn,em,var{
+	font-style: normal;
+}
+/* 将斜体扶正*/
+code,kbd,pre,samp{
+	font-family: courier new, courier, monospace;
+}
+/* 统一等宽字体*/
+small{
+	font-size: 12px;
+}
+/* 小于 12px 的中文很难阅读，让 small 正常化*/
+	/** 重置列表元素 **/
+ul,ol{
+	list-style: none;
+}
+/** 重置文本格式元素 **/
+	
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+/** 重置表单元素 **/
+legend{
+	color: #000;
+}
+/* for ie6*/
+fieldset,img{
+	border: 0;
+}
+/* img 搭车：让链接里的 img 无边框*/
+button,input,select,textarea{
+	font-size: 100%;
+}
+/* 使得表单元素在 ie 下能继承字体大小*/
+	/* 注：optgroup 无法扶正*/
+	/** 重置表格元素 **/
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 处理图像3px问题 */
+img{
+	vertical-align:middle;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+.top a {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 14px;
+	color: black;
+	position: relative;
+	text-decoration: none;
+}
+.top a:hover::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 36px;
+    background-color: #15bded;
+    left: 25%;
+}
+.top img {
+    margin-left: 107px;
+    margin-right: 372px;
+}
+.top {
+    height: 103px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	line-height: 103px;
+}
+.header{
+	background-color: black;
+	color: white;
+	height: 45px;
+	padding: 0px 110px;
+	line-height: 45px;
+	min-width: 1200px;
+}
+.header span:first-child{
+	float: left;
+
+}
+.header span{
+	float: right;
+	background-repeat: no-repeat;
+}
+.header span:nth-child(2)
+{
+	background-image: url(../images/icon.jpg);
+	background-position-y:-70px;
+	margin-left: 45px;
+	text-indent: 24px;
+}
+.header span:nth-child(3)
+{
+	background-image: url(../images/icon.jpg);
+	background-position-y:-28px;
+	margin-left: 45px;
+	text-indent: 24px;
+}
+.footer{
+	padding-top:70px;
+	background-color: #141414;
+	padding-bottom: 24px;
+	height:441px;
+}
+.footer-top{
+	height: 340px;
+
+}
+.map{
+	background-image: url(../images/icon.jpg);
+	background-position-y:-1px;
+	text-indent: 24px;
+	color:#848289;
+	background-repeat: no-repeat;
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 22px;
+}
+.footer-top ul img:first-child{
+	margin-bottom: 40px;
+} 
+.tel{
+	background-image: url(../images/icon.jpg);
+	background-position-y:-40px;
+	text-indent: 24px;
+	color:#848289;
+	background-repeat: no-repeat;
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 22px;
+}
+.email{
+	background-image: url(../images/icon.jpg);
+	background-position-y:-81px;
+	text-indent: 24px;
+	color:#848289;
+	background-repeat: no-repeat;
+	height: 22px;
+	line-height: 22px;
+}
+.footer-top ul:first-child{
+	margin-right: 85px;
+	float: left;
+
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    bottom: -18px;
+    background-color: #15bded;
+    left: 0px;
+
+}
+h1{
+    position: relative;
+    width: 112px;
+	height: 34px;
+	font-family: MicrosoftYaHei;
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 38px;
+	letter-spacing: 0px;
+	color: #252525;
+   
+    margin-right: 16px;
+    margin-bottom: 64px;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    bottom: -18px;
+    background-color: #318568;
+    left: 0px;
+
+}
+h2{
+    position: relative;
+    width: 80px;
+	height: 34px;
+	font-family: MicrosoftYaHei;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 24px;
+	letter-spacing: 0px;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 55px;
+	color:white;
+	margin-right: 180px;
+}
+.links span a{
+	color: #848289;
+}
+.links span{
+	margin-bottom: 28px;
+	float: left;
+	
+}
+.links{
+	width: 240px;
+	margin-right: 125px;
+	float: left;
+	position:relative; 
+}
+.links span:nth-child(2n) {
+	margin-right: 78px;
+}
+.links input{
+	width: 320px;
+	border: 0px;
+	outline: none;
+	background-color:#333333;
+	height: 47px;
+	margin-bottom: 30px;
+
+	
+}
+.links button{
+	height: 47px;
+	width:99px;
+	color: white;
+	background-color :#3aa27f;
+	width: 100px;
+	position: absolute;
+    right: -79px;
+    top: 89px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+#kl{
+	color: #848289;
+	margin-right:5px;
+	line-height: 33px;
+}
+.footer-bottm{
+	background-color: black;
+	height: 77px;
+	line-height: 77px;
+	color:#848289; 
+	text-align: center;
+}
+.banner-top{
+	height: 309px;
+	min-width: 1200px;
+	background-image: url(../images/banner5.jpg);
+	background-position: center center;
+}
+.banner{
+	height: 360px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.banner-bottm{
+	height: 50px;
+	line-height: 50px;
+}
+.banner-bottm a{
+	color: #818388;
+	font-size: 14px;
+	
+}
+h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+.main{
+    margin-top: 33px;
+}
+.main-b li{
+    width: 262px;
+	height: 48px;
+    background-color: #f2f2f2;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.main-b{
+    float: left;
+    width: 261px;
+    margin-right: 27px;
+}
+.main-b img{width: 261px;
+	height: 261px;
+	float: left;}
+.main-b li:last-child{
+    margin-top: 20px;
+}
+
+

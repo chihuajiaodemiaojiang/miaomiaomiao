@@ -1,0 +1,95 @@
+.main-top span:first-child {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+.mae {
+    height: 30px;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-top {
+
+    box-sizing: border-box;
+
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.mac {
+    width: 332px;
+    height: 33px;
+    line-height: 33px;
+    float: left;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.mao {
+    background-image: url(../images/tabbg.png);
+    position: relative;
+    margin-bottom: 55px;
+    width: 334px;
+    height: 41px;
+    margin-left: 166px;
+}
+.mac a{
+    color: black;
+}
+.maina li{
+    width: 480px;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 35px;
+}
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 28px;
+    margin-right: 28px;
+}
+li span{
+    display:block
+    
+}
+li span:nth-child(3){
+    margin-bottom: 20px
+}
+li img{
+    float: left;
+    margin-right: 28px;
+}
+li span:nth-child(4){
+    margin-top: 28px;
+    margin-right: 28px;
+}
+.main-bootm a{
+    display: block;
+    background-color: red;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 57px;
+
+}
+
+.main-bootm .hc {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+
+}
+.main-bootm li {
+    display: inline-block;
+
+}
