@@ -1,0 +1,69 @@
+创建自定义对象的通常方式是创建 Object 的一个新实例，然后再给它添加属性和方法,只能创建空对象
+let person = new Object();
+person.name = "Nicholas";
+person.age = 29;
+person.job = "Software Enginee
+person.sayName = function() {
+console.log(this.name);
+};
+字面量方式创建对象时，可以初始化属性和方法
+这些属性都有自己的特征，而这些特征决定了它们在 JavaScript 中的行为。
+let person = {
+name: "Nicholas",
+age: 29,
+job: "Software Engineer",
+sayName() {
+console.log(this.name);
+}
+};
+未定义
+给对象添加属性性别为男
+let a='hello'; //普通的字符串
+        console.log( a, typeof a );
+
+        let b=new String('world!!!'); 实例化方式，字符串对象
+        console.log( b, typeof b );
+
+        
+        console.log( a.length ); 普通的字符串都能够调用属性和方法
+        console.log( b.length );
+
+        console.log( 10.12345.toFixed(2) );
+        console.log( [1,2,3,4].length );
+        
+        console.log( a.toFixed(2) ); 把数字转换为字符串，结果的小数点后有指定位数的数字。
+
+        console.log( Math );
+
+        //1. .PI圆周率
+        console.log( Math.PI );
+
+        //2. .ceil()向上取整
+        console.log( Math.ceil(5.1) ); //有11条数据，每页显示5条，一共有几页？
+
+        //3. .floor()向下取整
+        console.log( Math.floor(5.1) );
+
+        //4. .max()最大值
+        console.log( Math.max(5, 11, 2, 6, 7) );
+
+        //5. .min()最小值
+        console.log( Math.min(5, 11, 2, 6, 7) );
+
+        //6. .random()随机小数，包含0不包含1
+        console.log( Math.random() );
+        console.log( Math.random() );
+         //1. 根据当前时间创建对象
+        let d1=new Date();
+        console.log( d1 );
+
+        //2. 根据日期字符串创建指定的日期对象
+        let d2=new Date('2022-05-01 00:00:00');
+        console.log( d2 );
+
+        //3. 根据数字参数创建日期对象
+        let d3=new Date(2022, 4, 1, 0, 0, 0);
+        console.log( d3 );
+
+        //日期对象的方法
+        console.log( d1.getTime()/1000 )

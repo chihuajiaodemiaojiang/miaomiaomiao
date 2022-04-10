@@ -1,0 +1,8 @@
+{
+    "globals": {
+        "$": false,
+        "window": false,
+        "document": false
+    },
+        "jshint.enable": true
+}

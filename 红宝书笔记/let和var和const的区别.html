@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*jshint.enable: true*/
+        //    1. var 可以重复定义，后面定义时var没有意义
+        //    2. let 不能重复定义，否则报错
+        //    3. const 定义常量，不能重复定义，不能再次赋值，否则报错
+        //    2. const 优先， let 次之
+        //    使用 const 声明可以让浏览器运行时强制保持变量不变，也可以让静态代码分析工具提前发现不
+        // 合法的赋值操作。因此，很多开发者认为应该优先使用 const 来声明变量，只在提前知道未来会有修
+        // 改时，再使用 let。这样可以让开发者更有信心地推断某些变量的值永远不会变，同时也能迅速发现因
+        // 意外赋值导致的非预期行为。
+
+        //  let 声明的范围是块作用域，
+        // 而 var 声明的范围是函数作用域
+        if (true) {
+            var name = 'aaa';
+            console.log(name);
+        }
+        console.log(name);
+        if (true) {
+            let age = 26;
+            console.log(age); // 26
+        }
+        console.log(age); // ReferenceError: age 没有定义
+        // let 与 var 的另一个重要的区别，就是 let 声明的变量不会在作用域中被提升。
+            // name 会被提升
+            console.log(name); // undefined
+        var name = 'Matt';
+        // age 不会被提升
+        console.log(age); // ReferenceError： age 没有定义
+        let age = 26;
+        //         const 的行为与 let 基本相同，唯一一个重要的区别是用它声明变量时必须同时初始化变量，且
+        //     尝试修改 const 声明的变量会导致运行时错误。;
+        const age = 26;
+        age = 36; // TypeError: 给常量赋值3.3 变量 29
+        // const 也不允许重复声明
+        const name = 'Matt';
+        const name = 'Nicholas'; // SyntaxError
+        // const 声明的作用域也是块
+        const name = 'Matt';
+        if (true) {
+            const name = 'Nicholas';
+        }
+        console.log(name); // Matt
+        // const 声明的限制只适用于它指向的变量的引用。换句话说，如果 const 变量引用的是一个对象，
+        //     那么修改这个对象内部的属性并不违反 const 的限制。;
+        const person = {};
+        person.name = 'Matt'; // ok
+        // JavaScript 引擎会为 for 循环中的 let 声明分别创建独立的变量实例，虽然 const 变量跟 let 变;
+        // 量很相似，但是不能用 const 来声明迭代变量（因为迭代变量会自增）：;
+        for (const i = 0; i < 10; ++i) { } // TypeError：给常量赋值
+        // 不过，如果你只想用 const 声明一个不会被修改的 for 循环变量，那也是可以的。也就是说，每;
+        // 次迭代只是创建一个新变量。这对 for-of 和 for-in 循环特别有意义：
+        let i = 0;
+        for (const j = 7; i < 5; ++i) {
+            console.log(j);
+        }
+        // 7, 7, 7, 7, 7
+        for (const key in { a: 1, b: 2 }) {
+            console.log(key);
+        }
+        // a, b
+        for (const value of [1, 2, 3, 4, 5]) {
+            console.log(value);
+        }
+// 1, 2, 3, 4, 5
+    </script>
+</body>
+
+</html>
