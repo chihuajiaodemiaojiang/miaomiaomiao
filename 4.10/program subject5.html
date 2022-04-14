@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+        <h1 class=""></h1>
 <body>
     <script>
-    //    setInterval(function(){
-    //        let d1=new Date();
-    //        let d2=new Date(new Date(new Date().toLocaleDateString()).getTime() +24 * 60 * 60 * 1000 );
+       setInterval(function(){
+           let d1=new Date();
+           let d2=new Date(new Date(new Date().toLocaleDateString()).getTime() +24 * 60 * 60 * 1000 );
 
-    //        let sec= Math.floor( d2.getTime()/1000 - d1.getTime()/1000 );
-    //        let h=Math.floor(sec/3600)
-    //        let m=Math.floor( sec/360 );
-    //        let s=sec%60;
-    //        console.log('还剩'+h+'小时'+m+'分'+s+'秒')
-    //    })
-    
+           let sec= Math.floor( d2.getTime()/1000 - d1.getTime()/1000 );
+           let h=Math.floor(sec/3600);
+           let m=Math.floor(sec/60)%60
+           let s=sec%60;
+           console.log('还剩'+h+'小时'+m+'分'+s+'秒')
+       })
+       
 
     </script>
 </body>

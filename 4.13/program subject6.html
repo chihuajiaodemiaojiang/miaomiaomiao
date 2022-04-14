@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="phone">
+    <button type="button" onclick="getCode()">获取验证码</button>
+    <span></span>
+    <script>
+        let phone = document.querySelector('#phone');
+        let btn = document.querySelector('button');
+        let span = document.querySelector('span');
+        let timer = null;
+        let num = 60;
+        btn.onclick = function () {
+            let phoneNum = phone.value;
+            if (phoneNum == '') {
+                span.innerHTML = '手机号不能为空';
+                return;
+            }
+            if (!/^1[34578]\d{9}$/.test(phoneNum)) {
+                span.innerHTML = '手机号格式不正确';
+                return;
+            }
+            btn.disabled = true;
+            timer = setInterval(function () {
+                num--;
+                btn.innerHTML = num + '秒后重新获取';
+                if (num == 0) {
+                    clearInterval(timer);
+                    btn.innerHTML = '获取验证码';
+                    btn.disabled = false;
+                    num = 60;
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <button onclick="Discoloration()">提交</button>
+    <script>
+        function Discoloration() {
+            let divs = document.querySelectorAll('div');
+            divs.forEach(function (v, i) {
+
+                divs[i].style.backgroundColor = 'yellow';
+                divs[i].style.width = '100px';
+                divs[i].style.height = '100px';
+            });
+        }
+    </script>
+</body>
+
+</html>

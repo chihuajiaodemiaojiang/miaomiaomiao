@@ -9,13 +9,15 @@
 </head>
 
 <body>
+    <input type="text" id="inputBox">
+    <button type="button" onclick="Discoloration()">提交</button>
     <script>
-        function Page(page,pageSize){
-        let pageCount = Math.ceil(page / pageSize)
-        console.log(pageCount)
-    }
-        Page(101,10)
+        function Discoloration() {
+            let inputBox = document.querySelector('#inputBox');
+            inputBox.style.border = '2px solid red';
+        }
     </script>
+
 </body>
 
 </html>

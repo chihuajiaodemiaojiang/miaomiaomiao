@@ -1,0 +1,25 @@
+1.
+核心( ECMAScript) 文档对象模型( DOM) 浏览器对象模型( BOM)
+2.
+getElementById() 在文档中查找指定的id节点，如果找到则返回该节点
+etElementsByTagName() 节点列表length属性表示了节点列表中节点的个数
+getElementsByName() 返回带有指定名字（name）对象的数组
+getElementsByClassName(类名) 返回带有指定类名（className）对象的数组
+document.querySelector(“选择器”)  返回页面中的第一个元素
+document.querySelectorAll(“选择器”) 返回页面中所有匹配的元素
+.name       窗口的名称
+.scrollY    滚动条滚动高度
+.setInterval()  设置周期定时器，可以执行多次
+.clearInterval() 清除周期定时器，必须加定时器标识
+ .scrollTo()     设置滚动条滚动到指定的位置
+.setTimeout()   设置超时定时器，只能执行1次
+.clearTimeout() 清除超时定时器，也必须加定时器标识
+ .innerText  获取或设置标签对中的普通文本
+.innerHTML  获取或设置标签对中的HTML内容
+.textContent 获取或设置文本节点或元素节点中的普通文本
+value      获取或设置表单元素的值，input  select  textarea
+a. style行内样式
+.style.样式属性名='值';
+
+b. className类名操作
+.className='类名';

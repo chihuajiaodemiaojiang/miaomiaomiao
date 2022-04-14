@@ -1,0 +1,44 @@
+1.
+特殊节点
+        html节点  document.documentElement
+        body节点  document.body
+查找节点
+        html4
+        document.getElementById();
+        document.getElementsByTagName();
+        document.getElementsByName();
+        document.getElementsByClassName();
+         html5
+        document.querySelector('选择器'); //获取选择器匹配到的第1个元素
+        document.querySelectorAll('选择器'); //获取所有匹配到的元素
+查找父子兄弟节点
+        node.parentNode;    //找父节点
+        node.children;      //找所有的子元素
+        node.previousElementSibling; //上一个元素兄弟
+        node.nextElementSibling; //下一个兄弟
+新增节点
+        //创建节点
+        let div=document.createElement('div');
+
+        //添加到DOM树
+        node.appendChild(div);   
+删除节点
+        node.remove(); //删除自己
+2.
+鼠标事件
+            click       点击事件
+            mouseover   鼠标移入事件
+            mouseout    鼠标移出事件
+
+ 键盘事件
+            keydown     键盘按下事件
+
+表单事件
+            submit      提交事件
+            input       输入事件
+            blur        失去焦点事件
+            change      改变事件
+
+窗口事件
+            load        窗口加载事件
+            scroll      滚动条滚动事件
