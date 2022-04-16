@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        let timer = setInterval(function () {
+            i++;
+            console.log(i);
+            if (i == 10) {
+                clearInterval(timer);
+                console.log('停止');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

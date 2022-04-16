@@ -9,8 +9,8 @@
 </head>
 <style>
     input {
-        border: 0px;
-        outline: 0px;
+        border: 0;
+        outline: 0;
         width: 236px;
         height: 25px;
         border: 1px solid black;
@@ -68,7 +68,7 @@
         color: #333;
         cursor: pointer;
         margin-top: 10px;
-        outline: 0px;
+        outline: 0;
     }
 
     .sure:hover {
@@ -102,100 +102,99 @@
 </style>
 
 <body>
-    <button id="btn">添加</button>
-    <div class="modal">
-    </div>
-    <div class="modal-box">
-        <div class="close">x</div>
-        姓名：<input type="text" name="name" id="name">
-        年级：<input type="text" name="age" id="age">
-        身高：<input type="text" name="height" id="height">
-        电话：<input type="text" name="tel" id="tel">
-        <button type="button" id="add" class="sure">确认添加</button>
-    </div>
-    <table border="1" cellspacing="0" cellpadding="0">
-        <tr>
-            <td>姓名</td>
-            <td>年龄</td>
-            <td>身高</td>
-            <td>电话</td>
-            <td>删除</td>
-        </tr>
-    </table>
-    <script>
-        let btn = document.querySelector('#btn');
-        let modal = document.querySelector('.modal');
-        let modalBox = document.querySelector('.modal-box');
-        btn.addEventListener('click', function () {
-            modal.style.display = 'block';
-            modalBox.style.display = 'block';
-        });
-        let Close = document.querySelector('.close');
-        let sure = document.querySelector('.sure');
-        Close.addEventListener('click', function () {
-            modal.style.display = 'none';
-            modalBox.style.display = 'none';
-        });
-        let add = document.querySelector('#add');
-        add.addEventListener('click', function () {
-            let name = document.querySelector('#name').value;
-            if (!/^[\u4e00-\u9fa5]{2,4}$/.test(name)) {
-                alert('请输入正确的姓名');
-                return;
-            }
-            let age = document.querySelector('#age').value;
-            if (!/^\d{2}$/.test(age)) {
-                alert('请输入正确的年龄');
-                return;
-            }
-            let height = document.querySelector('#height').value;
-            if (!/^\d{3}(cm)$/.test(height)) {
-                alert('请输入正确的身高');
-                return;
-            }
-            let tel = document.querySelector('#tel').value;
-            if (!/^1[34578]\d{9}$/.test(tel)) {
-                alert('请输入正确的手机号');
-                return;
-            }
-            if (name == '' || age == '' || height == '' || tel == '') {
-                alert('请输入完整信息');
-                return;
-            }
-            let table = document.querySelector('table');
-            let tr = document.createElement('tr');
-            let td1 = document.createElement('td');
-            let td2 = document.createElement('td');
-            let td3 = document.createElement('td');
-            let td4 = document.createElement('td');
-            let td5 = document.createElement('td');
-            td1.innerHTML = name;
-            td2.innerHTML = age;
-            td3.innerHTML = height;
-            td4.innerHTML = tel;
-            td5.innerHTML = '<button id="Delete">删除</button>';
-            table.appendChild(tr);
-            tr.appendChild(td1);
-            tr.appendChild(td2);
-            tr.appendChild(td3);
-            tr.appendChild(td4);
-            tr.appendChild(td5);
-            document.querySelector('#name').value = '';
-            document.querySelector('#age').value = '';
-            document.querySelector('#height').value = '';
-            document.querySelector('#tel').value = '';
-            modal.style.display = 'none';
-            modalBox.style.display = 'none';
-
-        });
+<button id="btn">添加</button>
+<div class="modal">
+</div>
+<from action="" method="post" class="modal-box">
+    <div class="close">x</div>
+    姓名：<input type="text" name="name" id="name">
+    年龄：<input type="text" name="age" id="age">
+    身高：<input type="text" name="height" id="height">
+    电话：<input type="text" name="tel" id="tel">
+    <button type="button" id="add" class="sure">确认添加</button>
+</from>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>身高</td>
+        <td>电话</td>
+        <td>删除</td>
+    </tr>
+</table>
+<script>
+    let btn = document.querySelector('#btn');
+    let modal = document.querySelector('.modal');
+    let modalBox = document.querySelector('.modal-box');
+    btn.addEventListener('click', function () {
+        modal.style.display = 'block';
+        modalBox.style.display = 'block';
+    });
+    let Close = document.querySelector('.close');
+    let sure = document.querySelector('.sure');
+    Close.addEventListener('click', function () {
+        modal.style.display = 'none';
+        modalBox.style.display = 'none';
+    });
+    let add = document.querySelector('#add');
+    add.addEventListener('click', function () {
+        let name = document.querySelector('#name').value;
+        if (!/^[\u4e00-\u9fa5]{2,4}$/.test(name)) {
+            alert('请输入正确的姓名');
+            return;
+        }
+        let age = document.querySelector('#age').value;
+        if (!/^\d{2}$/.test(age)) {
+            alert('请输入正确的年龄');
+            return;
+        }
+        let height = document.querySelector('#height').value;
+        if (!/^\d{3}(cm)$/.test(height)) {
+            alert('请输入正确的身高');
+            return;
+        }
+        let tel = document.querySelector('#tel').value;
+        if (!/^1[34578]\d{9}$/.test(tel)) {
+            alert('请输入正确的手机号');
+            return;
+        }
+        if (name == '' || age == '' || height == '' || tel == '') {
+            alert('请输入完整信息');
+            return;
+        }
         let table = document.querySelector('table');
-        table.addEventListener('click', function (e) {
-            if (e.target.id == 'Delete') {
-                e.target.parentNode.parentNode.remove();
-            }
-        });
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        td1.innerHTML = name;
+        td2.innerHTML = age;
+        td3.innerHTML = height;
+        td4.innerHTML = tel;
+        td5.innerHTML = '<button id="Delete">删除</button>';
+        table.appendChild(tr);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        document.querySelector('#name').value = '';
+        document.querySelector('#age').value = '';
+        document.querySelector('#height').value = '';
+        document.querySelector('#tel').value = '';
+        modal.style.display = 'none';
+        modalBox.style.display = 'none';
+    });
+    let table = document.querySelector('table');
+    table.addEventListener('click', function (e) {
+        if (e.target.id == 'Delete') {
+            e.target.parentNode.parentNode.remove();
+        }
+    });
 
-    </script>
+</script>
 </body>
 
 </html>
