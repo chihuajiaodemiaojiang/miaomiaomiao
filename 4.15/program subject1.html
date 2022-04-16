@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Document</title>
+	<style>
+		.container{
+			width:1000px;
+			margin:10px auto;
+		}
+
+		.btns{
+			height:36px;
+			border-bottom:1px solid #ccc;
+			text-align:center;
+		}
+
+		.btns a{
+			text-decoration:none;
+			color:#fff;
+			background:#888;
+			display:inline-block;
+			height:36px;
+			line-height:36px;
+			padding:0 30px;
+		}
+
+		.btns a.on{
+			color:#f00;
+			background:#fff;
+			border:1px solid #ccc;
+			border-bottom:0;
+		}
+
+		.slider div{
+			margin:10px 0;
+			height:150px;
+			background:#aaa;
+			text-align:center;
+			font-size:60px;
+			color:#fff;
+			display:none;
+		}
+
+		.slider div:nth-child(1){
+			background:#f00;
+			display:block;
+		}
+		.slider div:nth-child(2){
+			background:#0a0;
+		}
+		.slider div:nth-child(3){
+			background:#00f;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="btns">
+		<a class="on" href="#">
+			企业文化
+		</a>
+		<a href="">
+			团队介绍
+		</a>
+		<a href="">
+			大事记
+		</a>
+	</div>
+	<div class="slider">
+		<div>111</div>
+		<div>222</div>
+		<div>333</div>
+	</div>
+</div>
+<script>
+    let btns=document.querySelectorAll('.btns a');
+    let slider = document.querySelectorAll('.slider div');
+    btns.forEach(function (v, i) {
+        v.onmouseover = function () {
+            btns.forEach(function (v2, i2) {
+                v2.className = ''
+            });
+            btns[i].className='on';
+            slider .forEach(function (v2, i2) {
+                v2.style.display = 'none'
+            })
+            slider[i].style.display = 'block'
+        }
+
+
+    });
+</script>
+</body>
+</html>
