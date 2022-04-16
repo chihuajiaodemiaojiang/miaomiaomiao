@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>马上要下课了</h1>
+    <button>提交</button>
+    <input type="text" placeholder="你好">
+    <ul></ul>
+    <script>
+        let h1=document.querySelector('h1');
+        let button=document.querySelector('button');
+        button.onclick=function(){
+            h1.style.display='none';
+        }
+        let input=document.querySelector('input');
+        input.onblur=function(){
+            h1.innerHTML=input.value;
+        }
+        let arr=['张三','李四','王麻子'];
+        let food=['牛肉','火锅','青菜'];
+        let ul=document.querySelector('ul');
+        arr.forEach(function(v,i){
+            let li=document.createElement('li');
+            li.innerHTML=arr[v]+'喜欢'+food[v];
+            ul.appendChild(li);
+        })
+
+
+    </script>
+</body>
+</html>

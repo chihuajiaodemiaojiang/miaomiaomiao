@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            
+        }
+        li {
+            display: none;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+        #on{
+            display:inline-block ;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="on">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        let li=document.querySelectorAll('li');
+        let ul=document.querySelector('ul');
+        let on=document.querySelector('#on');
+        // 点击任意li标签展开列表再次点击收起列表
+        on.onclick=function(){
+            if(ul.style.display=='none'){
+                ul.style.display='block';
+            }else{
+                ul.style.display='none';
+            }
+        }
+        ul.onclick=function(e){
+            let target=e.target;
+            if(target.tagName=='LI'){
+                target.style.display='block';
+            }
+            if(target.tagName=='LI'&&target.style.display=='block'){
+                target.style.display='none';
+            }
+        }
+        
+    </script>  
+
+   
+</body>
+</html>

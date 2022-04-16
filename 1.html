@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        input {
+            outline: none;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(57, 33, 33, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        form div {
+            width: 300px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1px solid rgb(10, 8, 8);
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            width: 100px;
+            text-align: center;
+            margin: 30px 0px;
+        }
+
+        .tabel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 400px;
+        }
+        th {
+            border: 1px solid rgb(10, 8, 8);
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .tabel table {
+            width: 400px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabel">
+        <table>
+            <thead>
+                <tr>
+                    <th> 姓名 </th>
+                    <th> 身高 </th>
+                    <th> 年龄 </th>
+                    <th> 电话 </th>
+                    <th>操作</th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button class="btn apply">报名</button>
+    </div>
+    <form>
+        <div>
+            <p> 姓名：<input type="text" placeholder="请输入你的姓名" class="name"></p>
+            <p> 身高：<input type="text" placeholder="请输入身高" class="hei"></p>
+            <p>年龄：<input type="text" placeholder="请输入年龄" class="age"></p>
+            <p> 电话：<input type="text" placeholder="请输入电话" class="del"></p>
+            <button class="btn" type="button"> 提交</button>
+        </div>
+    </form>
+    <script>
+        let apply = getEle(".apply", 1);// 实参
+        let btn = getEle("form .btn", 1);
+        let form = getEle("form", 1);
+        let inp = getEle("form div input",2);
+        console.log(inp);
+        let tbody = getEle("tbody");
+        // 第一步 点击 报名按钮 显示 form
+        apply.onclick = function () {
+            form.style.display = "block";
+        };
+        let html = "";
+
+  
+        btn.onclick = function () {
+            // 获取input 输入框的 值  value
+            // inp.forEach(function(val,ind){
+            //     console.log(val.value);
+            // });
+       
+            let name = getEle(".name");
+            let hei = getEle(".hei");
+            let age = getEle(".age");
+            let del = getEle(".del");
+            // console.log(name.value,hei.value,age.value,del.value);
+            if (name.value && hei.value && age.value && del.value) {
+                html += `   
+            <tr>
+                    <td>${name.value}</td>
+                    <td>${hei.value}</td>
+                    <td>${age.value}</td>
+                    <td>${del.value}</td>
+                    <td> <button>删除</button></td>
+           </tr>
+        `;
+                tbody.innerHTML = html;
+                name.value = "";
+                hei.value = "";
+                age.value = "";
+                del.value = "";
+                form.style.display = "none";
+            }
+        };
+        // 删除 功能
+        tbody.onclick = function (e) {// e  事件对象
+            console.log(e.target.nodeName);
+            if (e.target.nodeName === "BUTTON") {
+                // console.dir(e.target);
+                e.target.parentNode.parentNode.remove()
+                console.log(tbody.children, 'children');
+                if (tbody.children.length === 0) {
+                    html = "";
+                }
+            }
+
+        }
+
+
+
+
+
+
+        // // 封装 获取元素 的方法
+        // function getEle(ele, type = 1) {// 形参 接受 实参  
+        //     // type = type ||  1; es5 设置 默认值 
+        //     let element = null;
+        //     // if (type == 1) {
+        //     //   element = document.querySelector(ele);
+        //     // }else{
+        //     //     element = document.querySelectorAll(ele);
+        //     // }
+        //     element = type == 1 ? document.querySelector(ele) : document.querySelectorAll(ele)
+        //     return element;
+        // };
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
