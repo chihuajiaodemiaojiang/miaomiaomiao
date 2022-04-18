@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Document</title>
+	<link href="" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+		}
+
+		.slider {
+			width: 590px;
+			height: 470px;
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.btns {
+			width: 100%;
+			height: 30px;
+			position: absolute;
+			left: 0;
+			z-index: 1;
+			bottom: 20px;
+		}
+
+		.btns a {
+			text-indent: -9999px;
+			display: inline-block;
+			background-color: #6b6e73;
+			border-radius: 100%;
+			width: 20px;
+			height: 20px
+		}
+
+		.on {
+			border: 1px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<div class="btns">
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+		</div>
+		<ul>
+			<li>
+				<img alt="" src="./img/f275965dbc8dea85.jpg.webp">
+			</li>
+			<li>
+				<img alt="" src="./img/297fab5a216e3b25.jpg.webp">
+			</li>
+			<li>
+				<img alt="" src="./img/q (1).jpg">
+			</li>
+			<li>
+				<img alt="" src="./img/q (2).jpg">
+			</li>
+		</ul>
+	</div>
+	<script>
+        let btns = document.querySelectorAll('.btns a');
+        let img = document.querySelectorAll('.slider ul li');
+        let timer = null;
+        let n = 0
+
+        function play(i) {
+            btns.forEach(function (v2) {
+                v2.className = '';
+            });
+            btns[i].className = 'on';
+            img.forEach(function (v2) {
+                v2.style.display = 'none';
+            });
+            img[i].style.display = 'block';
+        }
+
+        function autoplay() {
+            timer = setInterval(function () {
+                n++;
+                if (n === img.length) {
+                    n = 0;
+                }
+                play(n);
+
+            }, 1000);
+        }
+
+
+        btns.forEach(function (v, i) {
+            v.onmouseover = function () {
+                play(i);
+                n = i;
+                clearInterval(timer);
+            }
+            v.onmouseout = function () {
+                autoplay();
+            }
+        });
+	</script>
+</body>
+</html>
