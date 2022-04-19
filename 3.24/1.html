@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./1.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 <body>
-    <textarea name="百度" id=""  placeholder="百度一下"></textarea>
-    <input type="submit" value="百度一下">
+	<form action="" method="post">
+		<input type="text" name="username" placeholder="用户名">
+		<input type="password" name="password" placeholder="密码">
+		<input type="button" value="提交">
+	</form>
+	<script>
+        const username = document.getElementsByName('username')[0];
+        const password = document.getElementsByName('password')[0];
+        const submit = document.getElementsByTagName('input')[2];
+        submit.onclick = function () {
+            if (username.value.length < 2 || username.value.length > 5) {
+                username.style.border = '1px solid red';
+            } else {
+                username.style.border = '1px solid green';
+            }
+            if (password.value.length < 6) {
+                password.style.border = '1px solid red';
+            } else {
+                password.style.border = '1px solid green';
+            }
+        }
+	</script>
 </body>
+
 </html>
