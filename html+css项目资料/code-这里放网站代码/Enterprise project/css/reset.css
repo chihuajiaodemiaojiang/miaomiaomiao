@@ -150,3 +150,61 @@ img {
     width: 1000px;
     margin: 0px auto;
 }
+.top {
+    height: 74px;
+    background-color: #d43b33;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.top img {
+    margin-left: 210px;
+    margin-right: 230px;
+}
+
+.top a:link,
+a:visited {
+    color: #ffffff;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    height: 279px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 53px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+.footer{
+    height: 316px;
+    background-image: url(../images/bottombg.png);
+    position: relative;
+    padding-top: 53px;
+    color: white;
+}
+.footer img{
+    float: left;
+    margin-left: 220px;
+    margin-right: 85px;
+    margin-bottom: 50px;
+
+}
+.footer p:nth-child(2){
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.footer p{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.footer p:nth-child(5){
+    margin-top: 43px;
+    color: #979797;
+}
