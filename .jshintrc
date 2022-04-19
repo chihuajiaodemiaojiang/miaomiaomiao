@@ -4,14 +4,19 @@
         "window": false,
         "document": false
     },
+    "undef": true,
     "strict": true,
     "curly": true,
     "noempty": true,
+    "latedef": true,
     "noarg": true,
-    "undef": true,
     "unused": true,
     "eqeqeq": true,
-    "-W097": false,
-    "-W117": false,
+    "unused": true,
+    "funcscope": true,
+    "forin": true,
+    "funcscope": true,
+    "latedef": "nofunc",
     "esversion": 6
+    
 }
