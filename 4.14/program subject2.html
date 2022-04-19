@@ -11,7 +11,7 @@
             width: 1000px;
             box-sizing: border-box;
         }
-        .btns{
+        .btn{
             height: 36px;
             margin: 0 auto;
             text-align: center;
@@ -19,7 +19,7 @@
             border-bottom: 1px solid #ccc;
 
         }
-        .btns a{
+        .btn a{
             display: inline-block;
             width: 100px;
             height: 36px;
@@ -37,7 +37,7 @@
             display: none;
         }
 
-        .btns a.on{
+        .btn a.on{
             background-color:white;
             color: red;
         }
@@ -58,7 +58,7 @@
         </div>
     </div>
 <script>
-    let btns = document.querySelectorAll('.btns a');
+    let btns = document.querySelectorAll('.btn a');
     let slider = document.querySelectorAll('.slider div');
     btns.forEach(function(v,i){
        v.onmouseover = function(){
