@@ -40,16 +40,17 @@
 				<label for="tel">联系电话：</label>
 				<input id="tel" name="tel" type="text">
 			</p>
-			<p>
-				<label for="business">主营业务：</label>
-				<input id="business" name="business" type="text">
+			<p style="position: relative;">
+				<label class="Business" for="business">主营业务：</label>
+				<textarea cols="20" id="business" name="business" rows="5" style="resize: none;"></textarea>
+
 			</p>
 			<p>
 				<button class="sure" id="add" type="button">确认添加</button>
 			</p>
 		</form>
 
-		<table>
+		<table border="1">
 			<tbody>
 			<tr>
 				<th>店铺名称</th>
@@ -57,6 +58,33 @@
 				<th>联系电话</th>
 				<th>主营业务</th>
 				<th>操作</th>
+			</tr>
+			<tr>
+				<td>源码时代小店1</td>
+				<td>源宝1</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>源码时代小店2</td>
+				<td>源宝2</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>源码时代小店3</td>
+				<td>源宝3</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
 			</tr>
 			</tbody>
 		</table>

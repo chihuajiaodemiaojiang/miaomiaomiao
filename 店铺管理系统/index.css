@@ -56,7 +56,14 @@ input {
 }
 
 #business {
-	height: 80px;
+	height: 70px;
+	line-height: 14px;
+	margin-top: 10px;
+	width: 225px;
+	border: 1px solid black;
+	overflow: hidden;
+	margin-left: 85px;
+
 }
 
 .tel {
@@ -178,5 +185,12 @@ h1 {
 	color: #ccc;
 	padding-top: 22px;
 	text-align: center;
+}
+
+.Business {
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50px;
+
 }
 

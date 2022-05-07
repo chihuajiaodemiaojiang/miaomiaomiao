@@ -39,7 +39,7 @@ add.addEventListener('click', function () {
                 <td>${tel}</td>
                 <td>${business}</td>
              
-                <td><button type="button" id ="Delete">删除</button></td>
+                <td><button type="button" class ="Delete">删除</button></td>
             </tr>
         `;
     get('tbody').innerHTML += html;
@@ -52,7 +52,7 @@ add.addEventListener('click', function () {
 });
 let table = get('table');
 table.addEventListener('click', function (e) {
-    if (e.target.id === 'Delete') {
+    if (e.target.className === 'Delete') {
         e.target.parentNode.parentNode.remove();
     }
 });
