@@ -1,0 +1,72 @@
+ 1.
+"undefined"表示值未定义；
+"boolean"表示值为布尔值；
+"string"表示值为字符串；
+"number"表示值为数值；
+"object"表示值为对象（而不是函数）或 null；
+"function"表示值为函数；
+"symbol"表示值为符号。
+2.
+1. var 可以重复定义，后面定义时var没有意义
+2. let 不能重定义，否则报错
+3. const 定义常量，不能重复定义，不能再次赋值，否则报错
+使用 const 声明可以让浏览器运行时强制保持变量不变，也可以让静态代码分析工具提前发现不
+合法的赋值操作。因此，很多开发者认为应该优先使用 const 来声明变量，只在提前知道未来会有修
+改时，再使用 let。这样可以让开发者更有信心地推断某些变量的值永远不会变，同时也能迅速发现因
+意外赋值导致的非预期行为。
+let 声明的范围是块作用域，
+而 var 声明的范围是函数作用域
+ const 的行为与 let 基本相同，唯一一个重要的区别是用它声明变量时必须同时初始化变量，且
+尝试修改 const 声明的变量会导致运行时错误。
+const 声明的限制只适用于它指向的变量的引用。换句话说，如果 const 变量引用的是一个对象，
+那么修改这个对象内部的属性并不违反 const 的限制
+JavaScript 引擎会为 for 循环中的 let 声明分别创建独立的变量实例，虽然 const 变量跟 let 变;
+量很相似，但是不能用 const 来声明迭代变量（因为迭代变量会自增）
+3.
+let BMI = 18.5;
+if (BMI <= 18.5) {
+    alert("消瘦");
+} else if (18.5 < BMI && BMI <= 24) {
+    alert("正常");
+} else {
+    alert("肥胖");
+4.
+  let cat = {
+            type: "英短",
+            name: "kathy",
+            mother: "母猫",
+            age: 2,
+            hobby: "睡觉,上蹿下跳,挠沙发",
+        }
+        let vcalues = [];
+        for (let key in cat) {
+            vcalues.push(cat[key]);
+        }
+5.
+let i = 0;
+let timer = setInterval(function () {
+    console.log(i);
+    i++;
+    if (i > 5) {
+        clearInterval(timer);
+    }
+}, 1000);
+6.
+arr = [1, 2, 3, 4, 5];
+function multiply(arr) {
+    let result = 1;
+    arr.forEach(function (i) {
+    result *= i;
+    });
+     return result;
+     }
+7.
+let box=document.querySelector(".box");
+box.onclick=function(){
+    box.style.backgroundColor="blue";
+}
+.pop()      删除数组的最后一个元素
+        .push()     添加一个元素到数组的末尾
+        .shift()    删除第一个元素
+        .unshift()  添加一个元素到开头
+        .splice()   添加、修改、删除任意位置的元素
