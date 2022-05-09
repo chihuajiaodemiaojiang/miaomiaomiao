@@ -1,0 +1,35 @@
+2.	Audio和video分别是什么标签？有哪些常用的属性和方法？
+视频标签跟音频标签
+视频常用的属性
+autoplay	自动播放	自动播放(现在主流浏览器禁止了)
+controls	控制条	视频控件
+width\	height	pixels
+loop	循环播放	循环播放
+muted	静音播放	静音播放
+duration	时长	视频总时长(用js获取)
+currentTime	时长	当前播放视频时间(用js获取)
+src	url	 视频的地址
+视频常用的方法
+play()	开始播放音频/视频
+pause()	暂停当前播放的音频/视频
+视频常用的事件
+onplay	播放音频触发的事件
+onpause	暂停当前播放的音频触发的事件
+onended	音频播放完成触发的事件(结束时也会触发暂停事件)
+音频常用的属性
+autoplay	autoplay		如果出现该属性，则音频在就绪后马上播放。(现在主流浏览器禁止了)
+controls	controls	如果出现该属性，则向用户显示控件，比如播放按钮。
+height	pixels		设置音频播放器的高度。
+loop	loop		如果出现该属性，则当媒介文件完成播放后再次开始播放。
+muted	muted	如果出现该属性，音频输出为静音。
+duration	时长	音频总时长
+currentTime	时长	当前播放音频时间
+src	url	要播放的音频的url。
+width	pixels	设置音频播放器的宽度。
+视频常用的方法
+play()	开始播放音频/视频
+pause()	暂停当前播放的音频/视频
+视频常用的事件
+onplay	播放音频触发的事件
+onpause	暂停当前播放的音频触发的事件
+onended	音频播放完成触发的事件
