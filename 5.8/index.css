@@ -1,6 +1,7 @@
 /*总体架构*/
 body, html {
 	height: 100%;
+	background-color: #f4f4f4;
 }
 
 * {
@@ -13,27 +14,29 @@ body {
 	flex-direction: column;
 }
 
+/*header {*/
+/*	width: 100%;*/
+/*	background-image: linear-gradient(0deg, #f1503b, #c82519 50%);*/
+/*	border-bottom-left-radius: 100%;*/
+/*	border-bottom-right-radius: 100%;*/
+
+/*}*/
+
 header {
-	width: 100%;
-	background-image: linear-gradient(0deg, #f1503b, #c82519 50%);
-	border-bottom-left-radius: 100%;
-	border-bottom-right-radius: 100%;
-
-}
-
-.header-top {
 	width: 100%;
 	height: 44px;
 	display: flex;
-	margin-bottom: 10px;
+	background-color: red;
 }
 
 main {
 	flex: 1;
 	overflow-y: auto;
+	overflow-x: hidden;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	height: 100%;
 	margin-top: 10px;
 }
 
@@ -106,20 +109,34 @@ footer {
 }
 
 .top-slideshow {
-	width: 90%;
+	width: 100%;
 	border-radius: 10px;
 }
 
-.pagination1 {
-	margin-top: -100px;
+.top-slideshow img {
+	width: 90%;
+}
+
+
+.filling {
+	width: 100%;
+	height: 5%;
+	margin: -4px;
 }
 
 /*主体部分*/
+.lides {
+	width: 90%;
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+
 .swiper-slide img {
 	width: 100%;
 }
 
 .advertising {
+	margin-top: 10px;
 	width: 90%;
 }
 
@@ -128,7 +145,9 @@ footer {
 }
 
 .mid-slideshow {
-	width: 90%;
+	width: 100%;
+	position: relative;
+	--swiper-theme-color: #ff0047 !important;
 }
 
 .mid-slideshow ul {
@@ -156,8 +175,114 @@ footer {
 	color: #666;
 }
 
-.page {
+.swiper {
 	--swiper-theme-color: #ff0047 !important;
+}
+
+.seckill {
+	width: 90%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 180px;
+}
+
+.seckill-title {
+	font-size: 16px;
+	height: 33px;
+
+}
+
+.seckill-timer-wrap {
+	color: red;
+	margin: 0 14% 0 2%;
+	height: 33px;
+}
+
+.seckill-nth:after {
+	height: .875rem;
+	width: 1.025rem;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(//wq.360buyimg.com/wxsq_project/portal/m_jd_index/images/seckill-time-to_1de70c91.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
+}
+
+.seckill-timer-link {
+	color: red;
+	font-size: 14px;
+	position: relative;
+	height: 33px;
+}
+
+.seckill-more-icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(//wq.360buyimg.com/wxsq_project/portal/m_jd_index/images/arrow_rt_2ccb8cd5.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: -18px;
+	top: 0;
+	transform: translateY(25%);
+}
+
+.seckill-time {
+	background-color: red;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+}
+
+.seckill-time-separator {
+	color: red;
+}
+
+.seckillList {
+	height: 160px;
+	display: flex;
+}
+
+.seckillList li {
+	height: 80px;
+	text-align: center;
+	color: red;
+}
+
+.seckillList img {
+	height: 100%;
+}
+
+.productList {
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.productList li {
+	width: 48%;
+	height: 210px;
+
+}
+
+.productList li img {
+	height: 75%;
+	width: 100%;
+}
+
+.caption {
+	font-size: 16px;
+}
+
+.price {
+	color: red;
 }
 
 /*尾部部分*/

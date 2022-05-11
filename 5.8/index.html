@@ -8,47 +8,54 @@
 	<link href="//at.alicdn.com/t/font_3387188_kvg0crtqid.css" rel="stylesheet">
 	<link href="./index.css" rel="stylesheet">
 	<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/8.1.4/swiper-bundle.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.1.4/swiper-bundle.min.js"></script>
 
 </head>
 <body>
+	<!--	被这个轮播图折磨到爆炸这款轮播图如果说超出页面后他就会隐藏掉.只有再CSS
+	里面加上overflow: revert才行，但这样如果设置百分90的话两边就会有图片出来
+	必须设置百分百,无法打到首页完全还原的效果,巨浪费时间我还以为我CSS写错了，
+	排错的时间，有这还不如自己写一个,尼玛的太坑了
+	百度后需要下载到本地引入，才能修改还未尝试太晚了，遇到此问题的人还不少
+	搞了半天只能将就用百分百替代-->
 	<header>
-		<div class="header-top">
-			<div class="cate ">
-				<span class="iconfont icon-cebianlan"></span>
-			</div>
-			<div class="searchBox">
-				<p class="search">
-					<span class="iconfont icon-jingdong"></span>
-					<span class="longString">丨</span>
-					<span class="iconfont icon-fangdajing"></span>
-					<span class="temps">直视我崽种</span>
-				</p>
-			</div>
-			<div class="loginBox">
-				<span>登入</span>
-			</div>
+		<div class="cate ">
+			<span class="iconfont icon-cebianlan"></span>
 		</div>
-		<div class="swiper top-slideshow">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img alt="" src="./img/banner1.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img alt="" src="./img/banner2.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img alt="" src="./img/banner3.png">
-				</div>
-			</div>
-			<!-- 如果需要分页器 -->
-			<div class="swiper-pagination pagination1"></div>
+		<div class="searchBox">
+			<p class="search">
+				<span class="iconfont icon-jingdong"></span>
+				<span class="longString">丨</span>
+				<span class="iconfont icon-fangdajing"></span>
+				<span class="temps">你甚至不愿意叫我一声东哥</span>
+			</p>
+		</div>
+		<div class="loginBox">
+			<span>登入</span>
 		</div>
 	</header>
 	<main>
+		<div class="lides">
+			<div class="swiper top-slideshow">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img alt="" src="./img/banner1.jpg">
+					</div>
+					<div class="swiper-slide">
+						<img alt="" src="./img/banner2.jpg">
+					</div>
+					<div class="swiper-slide">
+						<img alt="" src="./img/banner3.png">
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
 		<div class="advertising">
 			<img alt="" src="./img/c986aaa0b1571c1d.jpg!q70.dpg.webp">
 		</div>
-		<div class="swiper  mid-slideshow">
+		<div class="mid-slideshow">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<ul class="page1">
@@ -62,7 +69,68 @@
 			<!-- 如果需要分页器 -->
 			<div class="swiper-pagination page"></div>
 		</div>
+		<div class="seckill">
+			<span class="seckill-title">
+				京东秒杀
+			</span>
+			<span class="seckill-timer-wrap">
+				<span class="seckill-nth">
+					15
+				</span>
+				<span class="seckill_time">
+					<span class="seckill-time j_sk_h">
+					</span>
+					<span class="seckill-time-separator">:</span>
+					<span class="seckill-time j_sk_m">
+					</span>
+					<span class="seckill-time-separator">:</span>
+					<span class="seckill-time j_sk_s"></span>
+				</span>
+			</span>
+			<span class="seckill-timer-link">
+				爆款轮番秒
+				<i class="seckill-more-icon"></i>
+			</span>
+			<br>
+			<ul class="seckillList">
+				<li><img alt="" src="./img/a03ca4b788791f73.jpg!q70.dpg.webp">
+					<p>￥17.9</p>
+				</li>
+				<li><img alt="" src="./img/a03ca4b788791f73.jpg!q70.dpg.webp">
+					<p>￥17.9</p>
+				</li>
+				<li><img alt="" src="./img/a03ca4b788791f73.jpg!q70.dpg.webp">
+					<p>￥17.9</p>
+				</li>
+				<li><img alt="" src="./img/a03ca4b788791f73.jpg!q70.dpg.webp">
+					<p>￥17.9</p>
+				</li>
 
+			</ul>
+
+		</div>
+		<ul class="productList">
+			<li>
+				<img alt="" src="./img/41aabc6c228d08d2.jpg!q70.dpg.webp">
+				<p class="caption">抽油烟机</p>
+				<p class="price">¥1119.00</p>
+			</li>
+			<li>
+				<img alt="" src="./img/41aabc6c228d08d2.jpg!q70.dpg.webp">
+				<p class="caption">抽油烟机</p>
+				<p class="price">¥1119.00</p>
+			</li>
+			<li>
+				<img alt="" src="./img/41aabc6c228d08d2.jpg!q70.dpg.webp">
+				<p class="caption">抽油烟机</p>
+				<p class="price">¥1119.00</p>
+			</li>
+			<li>
+				<img alt="" src="./img/41aabc6c228d08d2.jpg!q70.dpg.webp">
+				<p class="caption">抽油烟机</p>
+				<p class="price">¥1119.00</p>
+			</li>
+		</ul>
 	</main>
 	<footer>
 		<ul>
@@ -83,7 +151,6 @@
 			</li>
 		</ul>
 	</footer>
-	<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.1.4/swiper-bundle.min.js"></script>
 	<script src="./index.js"></script>
 </body>
 </html>

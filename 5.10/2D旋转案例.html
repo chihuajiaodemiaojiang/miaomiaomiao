@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		.box img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.content {
+			width: 100%;
+			height: 100%;
+		}
+
+		.mask {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			transform-origin: right top;
+			transition: 0.8s;
+		}
+
+		.box:hover .mask {
+			transform: rotate(-270deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+
+		<div class="content">
+			<img alt="" src="./img/a24e6db5679503a7e40af684c25df4de.gif">
+		</div>
+		<div class="mask"></div>
+	</div>
+</body>
+</html>
