@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+	<style>
+		body {
+			background-color: #d95f4d;
+		}
+		.box{
+			width: 184px;
+			height: 255px;
+			background: url('./img/aa.jpg') no-repeat;
+			animation: walk .5s steps(16) infinite,move 4s linear infinite;
+		}
+		@keyframes walk {
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: -2944px 0;
+			}
+		}
+		@keyframes move {
+			0% {}
+			50% {
+				transform: translateX(1000px);
+			}
+			50.1% {
+				transform: translateX(1000px) rotateY(180deg);
+			}
+			100% {
+				transform: translateX(0) rotateY(180deg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
