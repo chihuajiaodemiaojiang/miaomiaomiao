@@ -22,7 +22,7 @@ body {
 
 /*}*/
 
-header  {
+header {
 	width: 100%;
 	height: 44px;
 	display: flex;
@@ -32,6 +32,7 @@ header  {
 main {
 	flex: 1;
 	overflow-y: auto;
+	overflow-x: hidden;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -108,26 +109,28 @@ footer {
 }
 
 .top-slideshow {
-	width:100%;
-	margin: 0 !important;
-	overflow: revert !important;
-	height: 100%;
+	width: 100%;
+	border-radius: 10px;
 }
 
 .top-slideshow img {
 	width: 90%;
 }
 
-.pagination1 {
-	margin-top: -100px;
-}
-.filling{
+
+.filling {
 	width: 100%;
 	height: 5%;
 	margin: -4px;
 }
 
 /*主体部分*/
+.lides {
+	width: 90%;
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+
 .swiper-slide img {
 	width: 100%;
 }
@@ -175,7 +178,8 @@ footer {
 .swiper {
 	--swiper-theme-color: #ff0047 !important;
 }
-.seckill{
+
+.seckill {
 	width: 90%;
 	background-color: white;
 	border-radius: 10px;
@@ -185,16 +189,18 @@ footer {
 	height: 180px;
 }
 
-.seckill-title{
-font-size: 16px;
-	height:33px ;
+.seckill-title {
+	font-size: 16px;
+	height: 33px;
 
 }
-.seckill-timer-wrap{
+
+.seckill-timer-wrap {
 	color: red;
 	margin: 0 14% 0 2%;
-	height:33px ;
+	height: 33px;
 }
+
 .seckill-nth:after {
 	height: .875rem;
 	width: 1.025rem;
@@ -206,12 +212,14 @@ font-size: 16px;
 	background-position: 50%;
 	background-size: contain;
 }
-.seckill-timer-link{
+
+.seckill-timer-link {
 	color: red;
 	font-size: 14px;
 	position: relative;
-	height:33px ;
+	height: 33px;
 }
+
 .seckill-more-icon {
 	display: inline-block;
 	width: 14px;
@@ -223,47 +231,57 @@ font-size: 16px;
 	top: 0;
 	transform: translateY(25%);
 }
-.seckill-time{
+
+.seckill-time {
 	background-color: red;
 	border-radius: 4px;
 	color: white;
 	text-align: center;
 }
-.seckill-time-separator{
+
+.seckill-time-separator {
 	color: red;
 }
-.seckillList{
+
+.seckillList {
 	height: 160px;
 	display: flex;
 }
-.seckillList li{
+
+.seckillList li {
 	height: 80px;
 	text-align: center;
 	color: red;
 }
-.seckillList img{
+
+.seckillList img {
 	height: 100%;
 }
-.productList{
-	width:95%;
+
+.productList {
+	width: 95%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 10px;
 }
-.productList li{
+
+.productList li {
 	width: 48%;
 	height: 210px;
 
 }
-.productList li img{
-    height: 75%;
+
+.productList li img {
+	height: 75%;
 	width: 100%;
 }
-.caption{
+
+.caption {
 	font-size: 16px;
 }
-.price{
+
+.price {
 	color: red;
 }
 
