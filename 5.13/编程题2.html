@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+        function formatDate(timeStamp) {
+            let date = new Date(timeStamp);
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+            let hour = date.getHours();
+            let minute = date.getMinutes();
+            let second = date.getSeconds();
+            let d = date.getDay()
+
+            function airZero(arr, n = '-') {
+                return arr.map(function (item) {
+                    return item < 10 ? '0' + item : item;
+                }).join(n);
+            }
+
+            let arr1 = [year, month, day];
+            let arr2 = [hour, minute, second];
+            let arr3 = ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'];
+            return airZero(arr1) + ' ' + airZero(arr2, ':') + ' ' + arr3[d];
+        }
+
+        let time1 = Date.now();
+        console.log(formatDate(time1));
+
+	</script>
+</body>
+</html>

@@ -42,6 +42,7 @@ applyColoursToADrawing(data, '.originalData');
 //按照学号排序
 get('#sort').onclick = function () {
     resetTheData()
+// sort排序: 默认按照字符串排序
     let sort = data.sort(function (a, b) {
         return a.studentNumber - b.studentNumber;
     });
@@ -51,6 +52,7 @@ get('#sort').onclick = function () {
 //筛选出大于18岁的学生
 get('#filter').onclick = function () {
     resetTheData()
+    // filter过滤: 筛选满足条件的数组元素,并返回一个新数组
     let filter = data.filter(function (item) {
         return item.age > 18;
     });
@@ -60,6 +62,7 @@ get('#filter').onclick = function () {
 //是否有score低于60的学生
 get('#some').onclick = function () {
     resetTheData()
+    // some: 判断是否有满足特定条件的元素,只有有一个满足就返回true, 并终止程序运行; 如果都不满足,才会返回false;
     let some = data.some(function (item) {
             return item.score < 60;
         }
@@ -78,6 +81,7 @@ get('#some').onclick = function () {
 //是否所有学生都满18岁
 get('#every').onclick = function () {
     resetTheData()
+    // every: 判断是否都满足特定条件; 满足就返回true; 只要有一个不满足就返回false, 并终止程序运行
     let every = data.every(function (item) {
         return item.age > 18;
     });
@@ -95,6 +99,7 @@ get('#every').onclick = function () {
 //把所有学生年龄加1
 get('#map').onclick = function () {
     resetTheData()
+    // map(): 遍历数组,返回对数组元素处理过后组成的新数组
     let map = data.map(function (item) {
             item.age++;
             return item;
@@ -107,6 +112,7 @@ get('#map').onclick = function () {
 // 找出第一个分数大于80的学生
 get('#find').onclick = function () {
     resetTheData()
+    // find查找: 返回满足条件的第一数组元素,并终止程序运行; 没有找到就返回undefined
     let find = data.find(function (item) {
             return item.score > 80;
         }

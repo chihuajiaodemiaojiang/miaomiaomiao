@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<h1 data-title="a" data-uid="89757">1</h1>
+	<h1 data-title="aa" data-uid="857857">2</h1>
+	<h1 data-title="aaa" data-uid="8208820">3</h1>
+	<script>
+        let h1 = document.querySelectorAll('h1');
+        h1.forEach(function (item) {
+            item.addEventListener('click', function () {
+                console.log(111)
+                // 地址栏参数标准写法: http://www.xx.com?属性名1=值1&属性名2=值2
+                // location.href = './详情页.html?title='+this.dataset['title'];
+                location.href = './b.html?uid=' + this.dataset['uid'] + '&title=' + this.dataset['title'];
+            })
+        })
+	</script>
+</body>
+</html>
