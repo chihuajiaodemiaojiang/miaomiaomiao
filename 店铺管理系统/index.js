@@ -23,9 +23,13 @@ add.addEventListener('click', function () {
     }
     let names = get('#names').value
     let business = get('#business').value
+    if (!/^[\u4e00-\u9fa5]/.test(business)) {
+        alert('请输入正确的介绍');
+        return;
+    }
     let tel = get('#tel').value
-    if (!/^1[34578]\d{9}$/.test(tel)) {
-        alert('请输入正确的手机号');
+    if (!/^(0\d{2,3}-\d{7,8})|(1[3584]\d{9})$/.test(tel)) {
+        alert('请输入正确的号码');
         return;
     }
     if (name === '' || names === '' || business === '' || tel === '') {
@@ -38,7 +42,6 @@ add.addEventListener('click', function () {
                 <td>${name}</td>
                 <td>${tel}</td>
                 <td>${business}</td>
-             
                 <td><button type="button" class ="Delete">删除</button></td>
             </tr>
         `;
