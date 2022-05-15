@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="./index.css" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="container">店铺管理系统</h1>
+	<div class="modal">
+	</div>
+	<div class="content container clearfix">
+		<ul>
+			<li class="green">行业大类</li>
+			<li>数码家电</li>
+			<li>汽车用品</li>
+			<li>食品酒水</li>
+			<li>餐饮生鲜</li>
+			<li>办公文教</li>
+			<li>家居百货</li>
+			<li>家纺家饰</li>
+		</ul>
+		<form action="" class="modal-box" method="post">
+			<div class="s-box">
+				添加新店铺
+				<div class="close">x</div>
+			</div>
+			<p>
+				<label for="names">店铺名称：</label>
+				<input id="names" name="names" type="text">
+			</p>
+			<p>
+				<label for="name">店长姓名：</label>
+				<input id="name" name="name" type="text">
+			</p>
+			<p>
+				<label for="tel">联系电话：</label>
+				<input id="tel" name="tel" type="text">
+			</p>
+			<p style="position: relative;">
+				<label class="Business" for="business">主营业务：</label>
+				<textarea cols="20" id="business" name="business" rows="5" style="resize: none;"></textarea>
+
+			</p>
+			<p>
+				<button class="sure" id="add" type="button">确认添加</button>
+			</p>
+		</form>
+
+		<table border="1">
+			<tbody>
+			<tr>
+				<th>店铺名称</th>
+				<th>店长姓名</th>
+				<th>联系电话</th>
+				<th>主营业务</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>源码时代小店1</td>
+				<td>源宝1</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>源码时代小店2</td>
+				<td>源宝2</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
+			</tr>
+			<tr>
+				<td>源码时代小店3</td>
+				<td>源宝3</td>
+				<td>028-88888888</td>
+				<td>敲代码</td>
+				<td>
+					<button class="Delete" type="button">删除</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<button id="btn">添加店铺</button>
+	</div>
+	<div class="footer container">
+		Copyright © 源码时代@H5学科
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+
+</html>

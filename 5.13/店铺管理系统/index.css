@@ -1,0 +1,196 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	float: left;
+	list-style: none;
+	margin-right: 16px;
+	width: 185px;
+	margin-bottom: 130px;
+}
+
+ul li {
+	height: 35px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 15px;
+	line-height: 35px;
+}
+
+.green {
+	font-size: 20px;
+	background-color: #00aa00;
+	color: white;
+
+}
+
+input {
+	outline: 0;
+	width: 225px;
+	height: 30px;
+	border: 1px solid black;
+	margin-top: 10px;
+
+}
+
+.modal-box p {
+	margin-left: 32px;
+}
+
+.modal-box p:nth-child(2) {
+	margin-top: 47px;
+}
+
+#business {
+	height: 70px;
+	line-height: 14px;
+	margin-top: 10px;
+	width: 225px;
+	border: 1px solid black;
+	overflow: hidden;
+	margin-left: 85px;
+
+}
+
+.tel {
+
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	display: none;
+}
+
+.modal-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	width: 400px;
+	height: 300px;
+	border-radius: 5px;
+	display: none;
+	z-index: 101;
+}
+
+.title {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+	color: #333;
+}
+
+
+.sure {
+	height: 30px;
+	line-height: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	color: white;
+	background-color: #00aa00;
+	width: 130px;
+	cursor: pointer;
+	outline: 0;
+	margin: 10px auto 10px 110px;
+
+}
+
+.sure:hover {
+	background: greenyellow;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+.close:hover {
+	background: red;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	width: 800px;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+tr {
+	height: 30px;
+}
+
+.s-box {
+	height: 30px;
+	background-color: #eee;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	text-indent: 6px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 18px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.footer {
+	border-top: 1px solid #ccc;
+	color: #ccc;
+	padding-top: 22px;
+	text-align: center;
+}
+
+.Business {
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50px;
+
+}
+
