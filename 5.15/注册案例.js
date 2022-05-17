@@ -12,12 +12,12 @@ input.forEach(function (v, i) {
         }
     }
     regBtn.onclick = function () {
-        flag = true
         input.forEach(function (v2, i2) {
             if (!arr[i2].test(v2.value)) {
                 flag = false
             }
         })
+        console.log(flag)
         if (flag) {
             alert('注册成功')
         } else {
