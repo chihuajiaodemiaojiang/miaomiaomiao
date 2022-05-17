@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qs/6.10.3/qs.min.js"
+	        type="application/javascript"></script>
+</head>
+<body>
+	<input id="" name="" placeholder="请输入邮箱" type="text">
+	<span></span>
+	<button id="btn">注册邮箱</button>
+	<script>
+        let input = document.querySelector('input');
+        let span = document.querySelector('span');
+        let btn = document.querySelector('#btn');
+        btn.addEventListener('click', function () {
+            let email = input.value;
+            let reg = /^[a-zA-Z\d_-]+@[a-zA-Z\d_-]+(\.[a-zA-Z\d_-]+)+$/;
+            if (reg.test(email)) {
+                axios.post('http://139.9.177.51:3333/api/emailExist', Qs.stringify({
+                    email: email
+                })).then(function (res) {
+                    if (res.data.code === 200) {
+                        axios.post('http://139.9.177.51:3333/api/reg', Qs.stringify({
+                            email: email
+                        })).then(function (res) {
+                            if (res.data.code === 200) {
+                                alert('注册成功')
+                            } else {
+                                alert('注册失败')
+                            }
+                        })
+                    } else {
+                        span.innerHTML = "邮箱已存在"
+                        span.style.color = 'red'
+                    }
+                })
+            } else {
+                span.innerHTML = "邮箱格式格式不正确"
+                span.style.color = 'red'
+            }
+        })
+	</script>
+</body>
+</html>
